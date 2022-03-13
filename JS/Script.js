@@ -59,7 +59,7 @@ function showNotes() {
     notesObj.forEach(function(element, index) {
         // Added html stringVariable to this new generated html stringVariable. for displaying available notes.
         html += `
-        <div class="card noteCard mx-4 my-3" style="width: 18rem;">
+        <div class="card noteCard mx-auto my-3" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Note ${index + 1}</h5>
                 <p class="card-text">${element}</p>
@@ -76,7 +76,7 @@ function showNotes() {
     if (notesObj.length != 0) {
         notesElm.innerHTML = html;
     } // Else we will show this message.
-    else { notesElm.innerHTML = `Nothing to show here. use "Add a Note" section to add a notes.` };
+    else { notesElm.innerHTML = `<b>Nothing to show here. Use "Add Note" section to add a notes.</b>` };
 };
 
 
