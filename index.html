@@ -34,11 +34,19 @@
         <h1>Welcome To Magic Moments App</h1>
         <div class="card">
             <div class="card-body">
+                <div class="col-md-4 mb-2">
+                    <label for="cardTitle" class="form-label"><b>Add a Title </b></label>
+                    <input type="text" class="form-control" id="cardTitle" placeholder="Add title..." required>
+                </div>
                 <h5 class="card-title">Add a note</h5>
                 <div class="form-group">
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Add notes..."></textarea>
                 </div>
                 <button class="btn btn-primary my-2" id="addBtn">Add Note</button>
+                <div class="form-check form-check-inline mx-3">
+                    <input class="form-check-input" type="checkbox" id="radioButton" value="option1">
+                    <label class="form-check-label" for="radioButton">Important</label>
+                </div>
             </div>
         </div>
         <hr>

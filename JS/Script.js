@@ -1,7 +1,7 @@
 /*
 Name : Vanshul Kesharwani
-Date : 13/07/2022
-Version : 1.0.0
+Date : 14/03/2022
+Version : 1.1.0
 Email : vkvanshulkesharwani54@gmail.com
 Further features : Add title, Mark a note as important, Separate notes by user, Add date and time on notes.
 */
@@ -61,7 +61,8 @@ function showNotes() {
         html += `
         <div class="card noteCard mx-auto my-3" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Note ${index + 1}</h5>
+                <h6 class="card-title text-muted">Note ${index + 1}</h6>
+                <h5 class="card-subtitle mb-2 ">Title</h5>
                 <p class="card-text">${element}</p>
                 <button id="${index}" onClick="deleteNote(this.id)" class="btn btn-primary">Delete</button>
             </div>
